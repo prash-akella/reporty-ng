@@ -1,0 +1,68 @@
+10
+
+dir
+125
+http://testng-xslt.googlecode.com/svn/trunk/test/split-suite
+http://testng-xslt.googlecode.com/svn
+
+
+
+2009-02-22T16:04:26.659440Z
+105
+cosminaru
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+7d2a43ea-6b48-0410-b1cc-adc57de51046
+
+testng-results.xml
+file
+
+
+
+
+2013-04-24T20:07:25.000000Z
+3f221f1ade6dce53d241715d066aafa7
+2008-04-04T15:34:12.980244Z
+41
+cosminaru
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+188
+
+TestNG JDK 1.4 (v4)
+dir
+
+TestNG JDK 1.5 (v4)
+dir
+

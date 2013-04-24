@@ -8,8 +8,8 @@
     </properties>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.testng.xslt</groupId>
-    <artifactId>testng-xslt-maven-plugin-test</artifactId>
+    <groupId>org.reportyng</groupId>
+    <artifactId>reporty-ng-maven-plugin-test</artifactId>
     <name>TestNG XSLT Maven Plugin Test</name>
     <version>0.0</version>
 
@@ -17,7 +17,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>5.7</version>
+            <version>5.11</version>
             <scope>test</scope>
             <classifier>jdk15</classifier>
         </dependency>
@@ -25,8 +25,8 @@
 
     <pluginRepositories>
         <pluginRepository>
-            <id>testng-xslt-plugin</id>
-            <url>http://www.cosminaru.ro/maven/</url>
+            <id>reporty-ng</id>
+            <url>https://github.com/cosminaru/reporty-ng/tree/master/dist/maven</url>
         </pluginRepository>
     </pluginRepositories>
 
@@ -48,9 +48,9 @@
     <reporting>
         <plugins>
             <plugin>
-                <groupId>org.testng.xslt</groupId>
-                <artifactId>testng-xslt-plugin</artifactId>
-                <version>1.1</version>
+                <groupId>org.reportyng</groupId>
+                <artifactId>reporty-ng</artifactId>
+                <version>1.2</version>
                 <configuration>
                     <!--Setting the output directory-->
                     <!--<outputDir>${project.basedir}/target/site/${pom.artifactId}</outputDir>-->

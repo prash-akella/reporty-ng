@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/101/trunk/test/split-suite-testcase/TestNG%20JDK%201.4
+END
+Basic.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/101/trunk/test/split-suite-testcase/TestNG%20JDK%201.4/Basic.xml
+END
+InvocationCount.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/61/trunk/test/split-suite-testcase/TestNG%20JDK%201.4/InvocationCount.xml
+END
+DataProvider.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/101/trunk/test/split-suite-testcase/TestNG%20JDK%201.4/DataProvider.xml
+END
+Test class groups 1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/61/trunk/test/split-suite-testcase/TestNG%20JDK%201.4/Test%20class%20groups%201.xml
+END
+TimeOut.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/61/trunk/test/split-suite-testcase/TestNG%20JDK%201.4/TimeOut.xml
+END
+Test class groups 2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/61/trunk/test/split-suite-testcase/TestNG%20JDK%201.4/Test%20class%20groups%202.xml
+END
+Test outer scope.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/61/trunk/test/split-suite-testcase/TestNG%20JDK%201.4/Test%20outer%20scope.xml
+END
+Nopackage.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/61/trunk/test/split-suite-testcase/TestNG%20JDK%201.4/Nopackage.xml
+END
+Inheritance.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/61/trunk/test/split-suite-testcase/TestNG%20JDK%201.4/Inheritance.xml
+END
+JUnit.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/61/trunk/test/split-suite-testcase/TestNG%20JDK%201.4/JUnit.xml
+END
+Dependents.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/101/trunk/test/split-suite-testcase/TestNG%20JDK%201.4/Dependents.xml
+END
+Regression1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/61/trunk/test/split-suite-testcase/TestNG%20JDK%201.4/Regression1.xml
+END
+InheritGroups.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/61/trunk/test/split-suite-testcase/TestNG%20JDK%201.4/InheritGroups.xml
+END
+Regression2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/61/trunk/test/split-suite-testcase/TestNG%20JDK%201.4/Regression2.xml
+END
+testng-results.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/91/trunk/test/split-suite-testcase/TestNG%20JDK%201.4/testng-results.xml
+END
+Parameters for constructors.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/61/trunk/test/split-suite-testcase/TestNG%20JDK%201.4/Parameters%20for%20constructors.xml
+END
+Test inner scope.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/61/trunk/test/split-suite-testcase/TestNG%20JDK%201.4/Test%20inner%20scope.xml
+END
+Triangle.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/61/trunk/test/split-suite-testcase/TestNG%20JDK%201.4/Triangle.xml
+END
+Skip.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/61/trunk/test/split-suite-testcase/TestNG%20JDK%201.4/Skip.xml
+END
+Factory.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/61/trunk/test/split-suite-testcase/TestNG%20JDK%201.4/Factory.xml
+END
+AfterClassCalledAtEnd.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/101/trunk/test/split-suite-testcase/TestNG%20JDK%201.4/AfterClassCalledAtEnd.xml
+END
+Exclusion.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/61/trunk/test/split-suite-testcase/TestNG%20JDK%201.4/Exclusion.xml
+END
+CheckTrianglePost.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/61/trunk/test/split-suite-testcase/TestNG%20JDK%201.4/CheckTrianglePost.xml
+END

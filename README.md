@@ -5,4 +5,4 @@ reporty-ng
 The current version is 1.2 and the changelog is available here: https://github.com/cosminaru/reporty-ng/wiki/Changelog
 
 # Downloads
- * Maven plugin (version 1.1) - you can read all about it [here](https://github.com/cosminaru/reporty-ng/wiki/MavenPlugin)
+ * Maven plugin - you can read all about it [here](https://github.com/cosminaru/reporty-ng/wiki/MavenPlugin)

@@ -20,6 +20,6 @@ public class TestClass1 {
 
     @Test
     public void doSomething3() {
-        throw new RuntimeException("Some error occurred");
+//        throw new RuntimeException("Some error occurred");
     }
 }

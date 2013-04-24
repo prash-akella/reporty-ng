@@ -56,7 +56,7 @@
                     <!--<outputDir>${project.basedir}/target/site/${pom.artifactId}</outputDir>-->
                     <!--Setting the testNgXslt.showRuntimeTotals flag-->
                     <showRuntimeTotals>true</showRuntimeTotals>
-                    <!--Setting the testNgXslt.cssFile parameter. This should be relative to the '${basedir}/target/site/testng-xslt' directory-->
+                    <!--Setting the testNgXslt.cssFile parameter. This should be relative to the '${basedir}/target/site/reportyng-xslt' directory-->
                     <sortTestCaseLinks>true</sortTestCaseLinks>
                     <testDetailsFilter>FAIL,PASS,SKIP,CONF</testDetailsFilter>
                 </configuration>

@@ -1,4 +1,4 @@
-package org.testng.xslt.test;
+package org.reportyng.xslt.test;
 
 /**
  * @author Cosmin Marginean, Jun 13, 2008

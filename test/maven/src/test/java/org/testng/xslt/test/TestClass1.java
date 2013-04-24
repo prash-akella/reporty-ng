@@ -1,7 +1,7 @@
-package org.testng.xslt.test;
+package org.reportyng.xslt.test;
 
-import org.testng.Reporter;
-import org.testng.annotations.Test;
+import org.reportyng.Reporter;
+import org.reportyng.annotations.Test;
 
 /**
  * @author Cosmin Marginean, Apr 1, 2008

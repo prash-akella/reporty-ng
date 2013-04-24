@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <plugins>
+    <plugin>
+      <name>Reporty-ng Maven Plugin</name>
+      <prefix>reporty-ng</prefix>
+      <artifactId>reporty-ng</artifactId>
+    </plugin>
+  </plugins>
+</metadata>

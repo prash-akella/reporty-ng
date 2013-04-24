@@ -4,19 +4,19 @@
 
     <test name="TestCase1">
         <packages>
-            <package name="org.testng.xslt.test.*"/>
+            <package name="org.reportyng.xslt.test.*"/>
         </packages>
     </test>
 
     <test name="Some other tests case">
         <packages>
-            <package name="org.testng.xslt.test.*"/>
+            <package name="org.reportyng.xslt.test.*"/>
         </packages>
     </test>
 
     <test name="Another test case">
         <packages>
-            <package name="org.testng.xslt.test.*"/>
+            <package name="org.reportyng.xslt.test.*"/>
         </packages>
     </test>
 

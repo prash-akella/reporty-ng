@@ -3,7 +3,7 @@
     <property name="src.dir" value="src"/>
     <property name="lib.dir" value="lib"/>
     <property name="test.dir" value="test"/>
-    <property name="version" value="1.1.1"/>
+    <property name="version" value="1.2"/>
 
     <path id="test.classpath">
         <fileset dir="${lib.dir}" includes="*.jar"/>
@@ -62,7 +62,7 @@
 
     <target name="dist">
         <delete dir="." includes="*.zip"/>
-        <zip destfile="testng-xslt-${version}.zip">
+        <zip destfile="reporty-ng-${version}.zip">
             <fileset dir="." includes="src/**"/>
             <fileset dir="." includes="lib/**"/>
             <fileset dir="." includes="test/**"/>

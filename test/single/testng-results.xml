@@ -6,7 +6,7 @@
     </groups>
     <test name="AvmSelect Valuation Products Test">
       <class name="com.facl.uaf.core.main.ExecuteTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)" name="setup" is-config="true" duration-ms="12107" started-at="2011-02-10T11:22:10Z" description="setup method before running tests" finished-at="2011-02-10T11:22:22Z">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.reportyng.ITestContext)" name="setup" is-config="true" duration-ms="12107" started-at="2011-02-10T11:22:10Z" description="setup method before running tests" finished-at="2011-02-10T11:22:22Z">
           <params>
             <param index="0">
               <value>
@@ -34,9 +34,9 @@
               </value>
             </param>
             <param index="5">
-              <value>
-                <![CDATA[org.testng.TestRunner@530cf2]]>
-              </value>
+              <value><![CDATA[
+                <![CDATA[org.reportyng.TestRunner@530cf2]]>
+              ]]></value>
             </param>
           </params>
         </test-method>
@@ -52,45 +52,39 @@
             <message>
               <![CDATA[VerifyReport - expected:<null> but was:<T30000012E0E20C6C55CB7> Bitmap:<<Bitmaps\2_10_11_11-25-06_AM.png>>]]>
             </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: VerifyReport - expected:<null> but was:<T30000012E0E20C6C55CB7> Bitmap:<<Bitmaps\2_10_11_11-25-06_AM.png>>
+            <full-stacktrace><![CDATA[<![CDATA[<![CDATA[<![CDATA[<![CDATA[<![CDATA[<![CDATA[<![CDATA[<![CDATA[<![CDATA[<![CDATA[<![CDATA[<![CDATA[<![CDATA[<![CDATA[<![CDATA[<![CDATA[<![CDATA[<![CDATA[<![CDATA[<![CDATA[<![CDATA[<![CDATA[<![CDATA[<![CDATA[<![CDATA[
+              <![CDATA[java.lang.AssertionError: VerifyReport - expected:<null> but was:<T30000012E0E20C6C55CBreportyngmap:<<Bitmaps\2_10_11_11-25-06_AM.png>>
 	at org.testng.Assert.fail(Assert.java:86)
 	at com.facl.uaf.core.main.ExecuteTest.handleFailure(ExecuteTest.java:422)
 	at com.facl.uaf.core.main.ExecuteTest.invokeTestMethod(ExecuteTest.java:215)
 	at com.facl.uaf.core.main.ExecuteTest.executeTestScenario(ExecuteTest.java:81)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.javareportyngat java.lang.reflect.Method.reportyng(Mereportyngava:597)
 	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:609)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:532)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:686)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1018)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:53reporreportyngrreportyngng.internal.Invoker.invokeTestMethod(Invoker.java:686)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1018)reportyngrgreportyngg.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
-	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.runWorkers(TestRunnreportynga:759)
+	at org.testng.TestRunner.privreportyng(TestRreportyngjava:592)
 	at org.testng.TestRunner.run(TestRunner.java:486)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.reportyng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.reportynguentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRunreportyngtyngunner.java:299)
 	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
-	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:912)
+	at org.testng.TesreportyngeateAndRunSuiteRunners(TestNG.java:912)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:876)
 	at org.testng.TestNG.run(TestNG.java:784)
 	at com.facl.uaf.core.main.MainDriver.mainTestDriver(MainDriver.java:199)
 	at com.facl.uaf.asap.core.TestRunner.test(TestRunner.java:62)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
-	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:609)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:421)
+	at sun.reflect.DelreportynggMethodAccessorImpl.invoke(DelegreportyngethodAccessorImpl.java:25)
+	at java.lareportynglect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelreportyngvokeMethod(MethodHelper.javareportyng	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:421)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:158)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:89)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:284)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
-	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:912)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:89reportyngorg.testng.Suitreportyngr.privateRun(SuiteRunner.java:2reportyngt org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(Treportyngjava:912)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:876)
 	at org.testng.TestNG.run(TestNG.java:784)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:64)
@@ -103,7 +97,7 @@
 	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:334)
 	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:980)
 ]]>
-            </full-stacktrace>
+            ]]>]]>]]>]]>]]>]]>]]>]]>]]>]]>]]>]]>]]>]]>]]>]]>]]>]]>]]>]]>]]>]]>]]>]]>]]>]]></full-stacktrace>
           </exception>
         </test-method>
         <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="437" started-at="2011-02-10T11:25:20Z" description="Tear down method to clean up the session after the tests are completed." finished-at="2011-02-10T11:25:21Z">

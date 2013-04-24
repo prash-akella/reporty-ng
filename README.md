@@ -4,7 +4,9 @@ reporty-ng
 
 The current version is 1.2 and the changelog is available here: https://github.com/cosminaru/reporty-ng/wiki/Changelog
 
-Read the [wiki](https://github.com/cosminaru/reporty-ng/wiki) for more details on setup and usage and check the [user group](http://groups.google.com/group/reporty-ng) for queries.
+## Resources
+ * Wiki: https://github.com/cosminaru/reporty-ng/wiki
+ * User group: http://groups.google.com/group/reporty-ng
 
 ## Downloads
  * Distribution package: https://raw.github.com/cosminaru/reporty-ng/master/dist/package/reporty-ng-1.2.zip

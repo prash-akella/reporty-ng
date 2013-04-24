@@ -15,3 +15,5 @@ The project was developed and tested with:
  * JDK 1.5 and JDK 1.6
  * Ant 1.7.1, Ant 1.8.1
  * Maven 2+
+
+![Sample reporty-ng output](https://raw.github.com/cosminaru/reporty-ng/master/dist/web-content/sample-report.png)

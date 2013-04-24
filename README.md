@@ -7,7 +7,8 @@ The current version is 1.2 and the changelog is available here: https://github.c
 Read the [wiki](https://github.com/cosminaru/reporty-ng/wiki) for more details on setup and usage and check the [user group](http://groups.google.com/group/reporty-ng) for queries.
 
 ## Downloads
- * Maven plugin - you can read all about it [here](https://github.com/cosminaru/reporty-ng/wiki/MavenPlugin)
+ * Distribution package: https://raw.github.com/cosminaru/reporty-ng/master/dist/package/reporty-ng-1.2.zip
+ * Maven plugin: you can read all about it [here](https://github.com/cosminaru/reporty-ng/wiki/MavenPlugin)
 
 ## System requirements
 The project was developed and tested with:

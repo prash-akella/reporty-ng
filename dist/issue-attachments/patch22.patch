@@ -1,0 +1,118 @@
+Index: src/main/java/org/testng/xslt/mavenplugin/TestNgXsltMojo.java
+===================================================================
+--- src/main/java/org/testng/xslt/mavenplugin/TestNgXsltMojo.java	(revision 110)
++++ src/main/java/org/testng/xslt/mavenplugin/TestNgXsltMojo.java	Thu Jul 09 15:09:29 CEST 2009
+@@ -14,6 +14,7 @@
+ import java.io.File;
+ import java.io.FileNotFoundException;
+ import java.io.FileOutputStream;
++import java.io.IOException;
+ import java.util.Locale;
+ 
+ /**
+@@ -30,6 +31,8 @@
+     private MavenProject project;
+ 
+     /**
++     * The location where the generated report is stored.
++     *
+      * @parameter default-value="${project.reporting.outputDirectory}/testng-xslt"
+      * @required
+      */
+@@ -80,6 +83,11 @@
+     private String testDetailsFilter;
+ 
+     protected void executeReport(Locale locale) throws MavenReportException {
++        if (getLog().isDebugEnabled()) {
++            getLog().debug("  mojo reportDir: " + getReportOutputDirectory());
++            getLog().debug("plugin reportDir: " + getProject().getReporting().getOutputDirectory());
++        }
++
+         String testNgResultsXml = getTestNgResultsXmlPath();
+         getLog().info("TestNG XSLT is processing file '" + testNgResultsXml + "'");
+         if (!new File(testNgResultsXml).exists()) {
+@@ -93,7 +101,6 @@
+             System.setProperty("javax.xml.transform.TransformerFactory", "net.sf.saxon.TransformerFactoryImpl");
+             TransformerFactory factory = TransformerFactory.newInstance();
+             String outputDir = getHtmlOutputDir();
+-            getLog().info("TestNG XSLT is generating HTML in directory '" + outputDir + "'");
+             new File(outputDir).mkdirs();
+             StreamSource inputSource = new StreamSource(new File(testNgResultsXml));
+             Transformer transformer = factory.newTransformer(new StreamSource(getClass().getResourceAsStream("/testng-results.xsl")));
+@@ -125,10 +132,18 @@
+     }
+ 
+     private String getHtmlOutputDir() {
+-        if (outputDir.startsWith(getProject().getBasedir().getAbsolutePath())) {
++        if (isChildDirectory(getDefaultPluginReportDirectory(), outputDir)) {
++            //Replace the plugin's default directory with the one set by Maven Mojo configuration.
++            //This ensures that output is redirected to the correct output location during Maven site:stage/site:deploy
++            String canonicalOutputdir = getCanonicalPath(outputDir);
++            String canonicalParentDir = getCanonicalPath(getDefaultPluginReportDirectory());
++            //Make sure that the proper base directory is used
++            return getReportOutputDirectory() + File.separator + canonicalOutputdir.substring(canonicalParentDir.length() + 1);
++        } else if (isChildDirectory(getReportOutputDirectory().getAbsolutePath(), outputDir)) {
+             return outputDir;
+         } else {
+-            return getProject().getBasedir() + File.separator + getOutputDirectory();
++            //todo Fails if output directory is some other absolute path
++            return getReportOutputDirectory() + File.separator + getOutputDirectory();
+         }
+     }
+ 
+@@ -137,7 +152,7 @@
+         if (surefireReportDirectory.startsWith(getProject().getBasedir().getAbsolutePath())) {
+             testNgResultsXmlPath = surefireReportDirectory;
+         } else {
+-            testNgResultsXmlPath = getProject().getBasedir() + File.separator + surefireReportDirectory;
++            testNgResultsXmlPath = getProject().getBuild().getDirectory() + File.separator + surefireReportDirectory;
+         }
+ 
+         return testNgResultsXmlPath + File.separator + "testng-results.xml";
+@@ -156,15 +171,43 @@
+     }
+ 
+     public String getOutputName() {
+-        final String reportingOutputDir = getProject().getReporting().getOutputDirectory();
+-        String outputName = getOutputDirectory() + File.separator + "index";
+-        if (outputName.startsWith(reportingOutputDir)) {
++        final String reportingOutputDir = getDefaultPluginReportDirectory();
++        String outputName = (outputDir + File.separator + "index");
++
++        //Only need to check for the default plugin reporting directory
++        if (isChildDirectory(reportingOutputDir, outputName)) {
+             outputName = outputName.substring(reportingOutputDir.length() + 1);/*also trim path sep*/
+         }
+ 
+         return outputName;
+     }
+ 
++    private boolean isChildDirectory(String parent, String child) {
++        return getCanonicalPath(child).startsWith(getCanonicalPath(parent));
++    }
++
++    //Returns the complete resolved path
++    private String getCanonicalPath(String path) {
++        try {
++            return new File(path).getCanonicalPath();
++        } catch (IOException e) {
++            getLog().error("Unable to determine canonical paths: " + e.getMessage(), e);
++            return path;
++        }
++    }
++
++    /**
++     * Returns the plugin's configured report output directory, as defined by ${project.reporting.outputDirectory}.
++     * The value is always regardless of what Maven goal is running, such as {@code mvn site:stage} or
++     * {@code mvn:site:deploy}. The value as returned by {@link #getReportOutputDirectory()} may differ, especially
++     * when running the previously mentioned goals.
++     *
++     * @return The report directory as defined by ${project.reporting.outputDirectory}.
++     */
++    private String getDefaultPluginReportDirectory() {
++        return getProject().getReporting().getOutputDirectory();
++    }
++
+     protected MavenProject getProject() {
+         return project;
+     }
